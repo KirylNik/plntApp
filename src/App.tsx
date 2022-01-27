@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './color.config.scss';
+import './fonts.config.scss';
+import style from './app.module.scss';
+import { IdentifyPlant } from "./pages/identifyPlant/IdentifyPlant.component";
+import {ReactComponent as Logo} from "./assets/svg/plantInPot.svg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+        <header>
+          <div className={style.appTitle}>
+            <Logo />
+            <span className={style.appTitle_bold}>PLNT:</span>
+            <span>Plant & Tree Idenifier</span>
+          </div>
+        </header>
+        <IdentifyPlant />
+      </>
   );
 }
 
