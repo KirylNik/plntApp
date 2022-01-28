@@ -1,5 +1,15 @@
+html, body, :global(#root) {
+  height: 100%;
+}
+
 body {
   font-family: "App Regular";
+}
+
+.appContainer {
+  display: grid;
+  grid-template-rows:  140px 1fr 78px;
+  height: 100%;
 }
 
 header {
@@ -22,6 +32,29 @@ header {
 
   svg {
     margin-right: 12px;
+  }
+}
+
+footer {
+  text-align: center;
+
+  a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--appTextPrimaryOpacity02);
+    padding: 0 24px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  a + a {
+    border-left: 1px solid var(--appTextPrimaryOpacity03);
   }
 }
 

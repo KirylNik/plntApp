@@ -7,7 +7,7 @@ import {ReactComponent as Logo} from "./assets/svg/plantInPot.svg";
 
 function App() {
   return (
-      <>
+      <div className={style.appContainer}>
         <header>
           <div className={style.appTitle}>
             <Logo />
@@ -15,8 +15,15 @@ function App() {
             <span>Plant & Tree Idenifier</span>
           </div>
         </header>
-        <IdentifyPlant />
-      </>
+        <main>
+            <IdentifyPlant />
+        </main>
+        <footer>
+            <a href="https://mobyrix.com/">Privacy Policy</a>
+            <a href="https://mobyrix.com/">Support</a>
+            <a href="https://mobyrix.com/">Terms of use</a>
+        </footer>
+      </div>
   );
 }
 

@@ -1,0 +1,50 @@
+.identifyPlant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background: no-repeat url("../../assets/svg/identifyPlantBg.svg");
+    background-position: top;
+    background-size: contain;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1270px;
+    z-index: -1;
+  }
+
+  &__button {
+    margin-bottom: 20px;
+  }
+
+  &__illustr {
+    background: no-repeat center url("../../assets/svg/scanPlant.svg");
+    margin-top: auto;
+    width: 100%;
+    height: 100%;
+    max-height: 410px;
+    margin-bottom: 28px;
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .identifyPlant:before {
+    background-position: bottom;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .identifyPlant__button {
+    order: 1;
+  }
+
+  .identifyPlant__illustr {
+    order: 0;
+  }
+}
