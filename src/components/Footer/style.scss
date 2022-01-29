@@ -1,0 +1,27 @@
+footer {
+  text-align: center;
+
+  a {
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--appTextPrimaryOpacity02);
+    padding: 0 24px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  a + a {
+    border-left: 1px solid var(--appTextPrimaryOpacity03);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  footer a {
+    padding: 0 16px;
+  }
+}

@@ -19,4 +19,9 @@
     &:active {
         background: var(--appBasicGreenPress);
     }
+
+    &:disabled {
+        background-color: var(--appBasicGreenDisabled);
+        cursor: default;
+    }
 }

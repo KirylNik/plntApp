@@ -1,5 +1,4 @@
 .pageInfo {
-  width: 816px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +13,6 @@
   }
 
   h2 {
-    font-weight: 500;
     font-size: 18px;
     line-height: 26px;
     color: var(--appTextSecondary);
@@ -23,9 +21,29 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .appContainer {
+    grid-template-rows:  112px 1fr 50px;
+  }
+}
+
 @media screen and (max-width: 479px) {
   .pageInfo {
     width: auto;
+
+    h1 {
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0 0 12px;
+      max-width: 260px;
+    }
+
+    h2 {
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 335px;
+      margin-bottom: 0;
+    }
   }
 }
 

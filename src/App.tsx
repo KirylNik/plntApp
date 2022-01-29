@@ -1,28 +1,31 @@
-import React from 'react';
+import React, {FC} from 'react';
 import './color.config.scss';
 import './fonts.config.scss';
 import style from './app.module.scss';
 import { IdentifyPlant } from "./pages/identifyPlant/IdentifyPlant.component";
-import {ReactComponent as Logo} from "./assets/svg/plantInPot.svg";
+import Header from "./components/Header/Header.component";
+import Footer from "./components/Footer/Footer.component";
+import {Recognize} from "./pages/recognize/Recognize.component";
+import LearnToxic from "./pages/learnToxic/LearnToxic.component";
+import DiagnosePlant from "./pages/diagnosePlant/DiagnosePlant.component";
+import PlantCare from "./pages/plantCare/PlantCare.component";
+import MakeEasy from "./pages/makeEasy/MakeEasy.component";
+import Registration from "./pages/registration/Registration.component";
 
-function App() {
+const App: FC = () => {
   return (
       <div className={style.appContainer}>
-        <header>
-          <div className={style.appTitle}>
-            <Logo />
-            <span className={style.appTitle_bold}>PLNT:</span>
-            <span>Plant & Tree Idenifier</span>
-          </div>
-        </header>
+        <Header />
         <main>
-            <IdentifyPlant />
+            {/*<IdentifyPlant />*/}
+            {/*<Recognize />*/}
+            {/*<LearnToxic />*/}
+            {/*<DiagnosePlant />*/}
+            {/*<PlantCare />*/}
+            {/*<MakeEasy />*/}
+            <Registration />
         </main>
-        <footer>
-            <a href="https://mobyrix.com/">Privacy Policy</a>
-            <a href="https://mobyrix.com/">Support</a>
-            <a href="https://mobyrix.com/">Terms of use</a>
-        </footer>
+        <Footer />
       </div>
   );
 }

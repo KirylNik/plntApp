@@ -1,0 +1,52 @@
+.learnToxic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: relative;
+
+  &__info {
+    max-width: 915px;
+  }
+
+  &__button {
+    margin-bottom: 20px;
+  }
+
+  &__illustr {
+    background: no-repeat center url("../../assets/svg/learnToxicIllust.svg");
+    margin-top: auto;
+    width: 100%;
+    height: 100%;
+    max-height: 475px;
+    margin-bottom: 5px;
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .learnToxic__button {
+    width: 255px;
+  }
+
+  .learnToxic__illustr {
+    margin-bottom: 22px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .learnToxic__info {
+    width: auto;
+  }
+
+  .learnToxic__button {
+    order: 1;
+  }
+
+  .learnToxic__illustr {
+    background: no-repeat center url("../../assets/svg/learnToxicIllustMob.svg");
+    background-size: contain;
+    order: 0;
+    max-height: 240px;
+  }
+}

@@ -3,18 +3,21 @@ import cn from 'classnames';
 import style from './style.module.scss';
 
 type TTrivialButtonProps = {
-    onClick?: (e: MouseEvent<HTMLButtonElement>) => void
-    className?: string,
+    onClick?: (e: MouseEvent<HTMLButtonElement>) => void,
+    disabled?: boolean,
+    className?: string
 }
 
 export const Button: FC<PropsWithChildren<TTrivialButtonProps>> = ({
     onClick,
+    disabled,
     className,
     children,
 }) => (
     <button
         className={cn(style.button, className)}
         type='button'
+        disabled={!disabled}
         onClick={onClick}
     >
         {children}

@@ -1,0 +1,36 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  label {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--appTextSecondary);
+    margin-bottom: 12px;
+  }
+
+  input {
+    height: 48px;
+    padding: 12px 50px 16px 12px;
+    outline: 2px solid var(--appTextPrimaryOpacity02);
+    border: none;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--appTextPrimary);
+
+    &:focus-visible, {
+      outline: 2px solid var(--appTextPrimaryOpacity02);
+    }
+  }
+}
+
+.valid:after {
+  content: url('../../assets/svg/check.svg');
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+}

@@ -1,19 +1,18 @@
 import React, { FC } from "react";
 import style from './style.module.scss';
-import {ReactComponent as A} from '../../assets/svg/a.svg';
-import { Button } from "../Button/Button.component";
+import cn from 'classnames';
 
 type TMainLayoutProps = {
     title: string,
-    subTitle: string
+    subTitle: string,
+    className?: string
 }
 
-export const PageInfo: FC<TMainLayoutProps> = ({ title, subTitle }) => {
+export const PageInfo: FC<TMainLayoutProps> = ({ title, subTitle, className }) => {
     return (
-        <div className={style.pageInfo}>
+        <div className={cn(style.pageInfo, className)}>
             <h1>{title}</h1>
             <h2>{subTitle}</h2>
-            {/*<A />*/}
         </div>
     )
 }
