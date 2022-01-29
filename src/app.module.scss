@@ -6,10 +6,38 @@ body {
   font-family: "App Regular";
 }
 
+main {
+  position: relative;
+}
+
 .appContainer {
   display: grid;
   grid-template-rows:  140px 1fr 78px;
   height: 100%;
+}
+
+.page {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease opacity;
+
+  &__enter {
+    opacity: 0;
+  }
+
+  &__enterActive {
+    opacity: 1;
+  }
+
+  &__exit {
+    opacity: 1;
+  }
+
+  &__exitActive {
+    height: 0;
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 1024px) {

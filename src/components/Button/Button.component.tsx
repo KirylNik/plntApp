@@ -10,14 +10,14 @@ type TTrivialButtonProps = {
 
 export const Button: FC<PropsWithChildren<TTrivialButtonProps>> = ({
     onClick,
-    disabled,
+    disabled = false,
     className,
     children,
 }) => (
     <button
         className={cn(style.button, className)}
         type='button'
-        disabled={!disabled}
+        disabled={disabled}
         onClick={onClick}
     >
         {children}

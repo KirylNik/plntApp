@@ -3,8 +3,9 @@ import { PageInfo } from "../../components/PageInfo/PageInfo.components";
 import { Button } from "../../components/Button/Button.component";
 import style from './style.module.scss';
 import EmailInput from "../../components/EmailInput/EmailInput.component";
+import {TPageComponent} from "../../types/app.types";
 
-const Registration: FC = () => {
+const Registration: TPageComponent = () => {
     const [isEmailValid, setIsEmailValid] = useState(false);
     debugger
     return (
@@ -32,7 +33,7 @@ const Registration: FC = () => {
                 />
                 <Button
                     className={style.registration__button}
-                    disabled={isEmailValid}
+                    disabled={!isEmailValid}
                 >
                     Create
                 </Button>
