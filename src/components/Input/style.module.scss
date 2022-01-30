@@ -21,6 +21,9 @@
     font-size: 14px;
     line-height: 24px;
     color: var(--appTextPrimary);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 
     &:focus-visible {
       outline: 2px solid var(--appTextPrimaryOpacity02);

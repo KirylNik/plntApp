@@ -107,3 +107,18 @@
     }
   }
 }
+
+@media screen and (max-height: 800px) {
+  .registration {
+    &__illustr {
+      display: none;
+    }
+
+    &__emailForm {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+  }
+}

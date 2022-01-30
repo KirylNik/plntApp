@@ -40,7 +40,7 @@ const App: FC = () => {
                 <CSSTransition
                   key={page}
                   in={currentPage === page}
-                  timeout={500}
+                  timeout={600}
                   mountOnEnter
                   unmountOnExit
                   classNames={{

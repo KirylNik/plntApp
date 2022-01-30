@@ -8,7 +8,7 @@ function Header() {
       <div className={style.title}>
         <Logo />
         <span className={style.title_bold}>PLNT:</span>
-        <span>Plant & Tree Idenifier</span>
+        <span>Plant & Tree Identifier</span>
       </div>
     </header>
   );

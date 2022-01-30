@@ -19,7 +19,7 @@ const Input: FC<TInputProps> = ({
 }) => (
   <div className={cn(style.inputContainer, className, isValid && style.valid)}>
     {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-    {label && <label htmlFor="">{label}</label>}
+    {label && <label>{label}</label>}
     <input
       type="text"
       value={value}
