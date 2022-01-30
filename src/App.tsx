@@ -14,7 +14,7 @@ import Registration from 'pages/registration/Registration.component';
 import PAGES from 'enums/pages.enum';
 import style from './app.module.scss';
 
-const PAGES_MAPP: Record<PAGES, TPageComponent> = {
+const PAGES_MAP: Record<PAGES, TPageComponent> = {
   [PAGES.IDENTIFY_PLANT]: IdentifyPlant,
   [PAGES.RECOGNIZE]: Recognize,
   [PAGES.LEARN_TOXIC]: LearnToxic,
@@ -26,38 +26,38 @@ const PAGES_MAPP: Record<PAGES, TPageComponent> = {
 
 const App: FC = () => {
   const [currentPage, setCurrentPage] = useState(PAGES.IDENTIFY_PLANT);
-  const pages = Object.keys(PAGES_MAPP) as PAGES[];
+  const pages = Object.keys(PAGES_MAP) as PAGES[];
 
   return (
     <>
       <Header />
       <main>
         {
-                pages.map((page) => {
-                  const Component = PAGES_MAPP[page];
+            pages.map((page) => {
+              const Component = PAGES_MAP[page];
 
-                  return (
-                    <CSSTransition
-                      key={page}
-                      in={currentPage === page}
-                      timeout={500}
-                      mountOnEnter
-                      unmountOnExit
-                      classNames={{
-                        enter: style.page__enter,
-                        enterActive: style.page__enterActive,
-                        exitActive: style.page__exitActive,
-                        exitDone: style.page__exit,
-                      }}
-                    >
-                      <div className={style.page}>
-                        <Component goToPage={setCurrentPage} />
-                      </div>
+              return (
+                <CSSTransition
+                  key={page}
+                  in={currentPage === page}
+                  timeout={500}
+                  mountOnEnter
+                  unmountOnExit
+                  classNames={{
+                    enter: style.page__enter,
+                    enterActive: style.page__enterActive,
+                    exitActive: style.page__exitActive,
+                    exitDone: style.page__exit,
+                  }}
+                >
+                  <div className={style.page}>
+                    <Component goToPage={setCurrentPage} />
+                  </div>
 
-                    </CSSTransition>
-                  );
-                })
-            }
+                </CSSTransition>
+              );
+            })
+        }
       </main>
       <Footer />
     </>
