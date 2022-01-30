@@ -1,8 +1,8 @@
 import React from 'react';
-import PageInfo from 'components/PageInfo/PageInfo.components';
-import Button from 'components/Button/Button.component';
-import { TPageComponent } from 'types/app.types';
 import PAGES from 'enums/pages.enum';
+import { TPageComponent } from 'types/app.types';
+import Button from 'components/Button/Button.component';
+import PageInfo from 'components/PageInfo/PageInfo.components';
 import style from './style.module.scss';
 
 const PlantCare: TPageComponent = ({ goToPage }) => (

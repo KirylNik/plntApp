@@ -5,6 +5,7 @@
     "name": "Kirill Nikolaichuk",
     "email": "kiryl.nik@gmail.com"
   },
+  "repository": "https://github.com/KirylNik/plntApp",
   "description": "Hello MOBYRIX ;-)",
   "private": true,
   "dependencies": {

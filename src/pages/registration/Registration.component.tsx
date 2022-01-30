@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import PageInfo from 'components/PageInfo/PageInfo.components';
-import Button from 'components/Button/Button.component';
-import EmailInput from 'components/EmailInput/EmailInput.component';
 import { TPageComponent } from 'types/app.types';
+import Button from 'components/Button/Button.component';
+import PageInfo from 'components/PageInfo/PageInfo.components';
+import EmailInput from 'components/EmailInput/EmailInput.component';
 import style from './style.module.scss';
 
 const Registration: TPageComponent = () => {

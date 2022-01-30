@@ -1,17 +1,17 @@
 import React, { FC, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import 'styles/global.module.scss';
+import PAGES from 'enums/pages.enum';
 import { TPageComponent } from 'types/app.types';
-import IdentifyPlant from 'pages/identifyPlant/IdentifyPlant.component';
 import Header from 'components/Header/Header.component';
 import Footer from 'components/Footer/Footer.component';
-import Recognize from 'pages/recognize/Recognize.component';
-import LearnToxic from 'pages/learnToxic/LearnToxic.component';
-import DiagnosePlant from 'pages/diagnosePlant/DiagnosePlant.component';
-import PlantCare from 'pages/plantCare/PlantCare.component';
 import MakeEasy from 'pages/makeEasy/MakeEasy.component';
+import Recognize from 'pages/recognize/Recognize.component';
+import PlantCare from 'pages/plantCare/PlantCare.component';
+import LearnToxic from 'pages/learnToxic/LearnToxic.component';
 import Registration from 'pages/registration/Registration.component';
-import PAGES from 'enums/pages.enum';
+import DiagnosePlant from 'pages/diagnosePlant/DiagnosePlant.component';
+import IdentifyPlant from 'pages/identifyPlant/IdentifyPlant.component';
+import 'styles/global.module.scss';
 import style from './app.module.scss';
 
 const PAGES_MAP: Record<PAGES, TPageComponent> = {
