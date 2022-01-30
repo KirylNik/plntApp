@@ -1,5 +1,5 @@
-import React, {FC, useState} from "react";
-import Input from "../Input/Input.component";
+import React, { FC, useState } from 'react';
+import Input from 'components/Input/Input.component';
 
 type TEmailInputProps = {
     isValid?: boolean,
@@ -9,22 +9,22 @@ type TEmailInputProps = {
 
 const emailRegExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-const EmailInput: FC<TEmailInputProps> = ({ isValid, onStatusChange, className}) => {
-    const [value, setValue] = useState('');
-    const onChange = (value: string) => {
-        setValue(value);
-        onStatusChange && onStatusChange(Boolean(emailRegExp.exec(value)));
-    };
+const EmailInput: FC<TEmailInputProps> = ({ isValid, onStatusChange, className }) => {
+  const [value, setValue] = useState('');
+  const onChange = (inputValue: string) => {
+    setValue(inputValue);
+    onStatusChange && onStatusChange(Boolean(emailRegExp.exec(inputValue)));
+  };
 
-    return (
-        <Input
-            className={className}
-            value={value}
-            label="EMAIL ADDRESS"
-            isValid={isValid}
-            onChange={onChange}
-        />
-    )
-}
+  return (
+    <Input
+      className={className}
+      value={value}
+      label="EMAIL ADDRESS"
+      isValid={isValid}
+      onChange={onChange}
+    />
+  );
+};
 
-export default EmailInput
+export default EmailInput;

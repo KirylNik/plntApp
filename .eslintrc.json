@@ -1,0 +1,24 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb",
+        "airbnb/rules/react",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["react", "only-warn"],
+    "rules": {
+        "react/prop-types": "off",
+        "import/extensions": "off",
+        "import/no-unresolved": "off",
+        "no-use-before-define": "off",
+        "no-unused-expressions": "off",
+        "react/require-default-props": "off",
+        "react/jsx-filename-extension": "off",
+        "react/function-component-definition": "off",
+        "@typescript-eslint/no-use-before-define": ["error"]
+    }
+}
