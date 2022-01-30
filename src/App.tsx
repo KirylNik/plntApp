@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import './styles/global.module.scss';
+import 'styles/global.module.scss';
 import { TPageComponent } from 'types/app.types';
 import IdentifyPlant from 'pages/identifyPlant/IdentifyPlant.component';
 import Header from 'components/Header/Header.component';
