@@ -24,32 +24,36 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .makeEasy__info {
-    width: 890px;
-  }
+  .makeEasy {
+    &__info {
+      width: 890px;
+    }
 
-  .makeEasy__button {
-    width: 255px;
-  }
+    &__button {
+      width: 255px;
+    }
 
-  .makeEasy__illustr {
-    margin-bottom: 28px;
+    &__illustr {
+      margin-bottom: 28px;
+    }
   }
 }
 
 @media screen and (max-width: 479px) {
-  .makeEasy__info {
-    width: auto;
-  }
+  .makeEasy {
+    &__info {
+      width: auto;
+    }
 
-  .makeEasy__button {
-    order: 1;
-  }
+    &__button {
+      order: 1;
+    }
 
-  .makeEasy__illustr {
-    background: no-repeat center url("../../assets/svg/makeEasyIllustBg.svg");
-    background-size: contain;
-    max-height: 270px;
-    order: 0;
+    &__illustr {
+      background: no-repeat center url("../../assets/svg/makeEasyIllustBg.svg");
+      background-size: contain;
+      max-height: 270px;
+      order: 0;
+    }
   }
 }

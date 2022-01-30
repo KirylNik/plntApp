@@ -24,24 +24,28 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .recognize__button {
-    width: 255px;
+  .recognize {
+    &__button {
+      width: 255px;
+    }
   }
 }
 
 @media screen and (max-width: 479px) {
-  .recognize__info {
-    width: auto;
-  }
+  .recognize {
+    &__info {
+      width: auto;
+    }
 
-  .recognize__button {
-    order: 1;
-  }
+    &__button {
+      order: 1;
+    }
 
-  .recognize__illustr {
-    background: no-repeat center url("../../assets/svg/recognizeMobBg.svg");
-    background-size: contain;
-    max-height: 367px;
-    order: 0;
+    &__illustr {
+      background: no-repeat center url("../../assets/svg/recognizeMobBg.svg");
+      background-size: contain;
+      max-height: 367px;
+      order: 0;
+    }
   }
 }

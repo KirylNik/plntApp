@@ -25,28 +25,32 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .learnToxic__button {
-    width: 255px;
-  }
+  .learnToxic {
+    &__button {
+      width: 255px;
+    }
 
-  .learnToxic__illustr {
-    margin-bottom: 22px;
+    &__illustr {
+      margin-bottom: 22px;
+    }
   }
 }
 
 @media screen and (max-width: 479px) {
-  .learnToxic__info {
-    width: auto;
-  }
+  .learnToxic {
+    &__info {
+      width: auto;
+    }
 
-  .learnToxic__button {
-    order: 1;
-  }
+    &__button {
+      order: 1;
+    }
 
-  .learnToxic__illustr {
-    background: no-repeat center url("../../assets/svg/learnToxicIllustMob.svg");
-    background-size: contain;
-    order: 0;
-    max-height: 240px;
+    &__illustr {
+      background: no-repeat center url("../../assets/svg/learnToxicIllustMob.svg");
+      background-size: contain;
+      order: 0;
+      max-height: 240px;
+    }
   }
 }

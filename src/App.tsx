@@ -5,7 +5,7 @@ import style from './app.module.scss';
 import IdentifyPlant from "./pages/identifyPlant/IdentifyPlant.component";
 import Header from "./components/Header/Header.component";
 import Footer from "./components/Footer/Footer.component";
-import {Recognize} from "./pages/recognize/Recognize.component";
+import Recognize from "./pages/recognize/Recognize.component";
 import LearnToxic from "./pages/learnToxic/LearnToxic.component";
 import DiagnosePlant from "./pages/diagnosePlant/DiagnosePlant.component";
 import PlantCare from "./pages/plantCare/PlantCare.component";

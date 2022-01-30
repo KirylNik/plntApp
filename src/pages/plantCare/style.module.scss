@@ -41,43 +41,43 @@
   .plantCare {
     width: 815px;
     margin: 0 auto;
-  }
 
-  .plantCare:before {
-    max-width: 660px;
-    bottom: 0;
-  }
+    &:before {
+      max-width: 660px;
+      bottom: 0;
+    }
 
-  .plantCare__info {
-    width: auto;
-  }
+    &__info {
+      width: auto;
+    }
 
-  .plantCare__button {
-    width: 255px;
-  }
+    &__button {
+      width: 255px;
+    }
 
-  .plantCare__illustr {
-    margin-bottom: 30px;
+    &__illustr {
+      margin-bottom: 30px;
+    }
   }
 }
 
 @media screen and (max-width: 479px) {
   .plantCare {
     width: auto;
-  }
 
-  .plantCare__button {
-    order: 1;
-  }
+    &:before {
+      content: none;
+    }
 
-  .plantCare__illustr {
-    background: no-repeat center url("../../assets/svg/plantCareIllustMob.svg");
-    background-size: contain;
-    max-height: 340px;
-    order: 0;
-  }
+    &__button {
+      order: 1;
+    }
 
-  .plantCare:before {
-    content: none;
+    &__illustr {
+      background: no-repeat center url("../../assets/svg/plantCareIllustMob.svg");
+      background-size: contain;
+      max-height: 340px;
+      order: 0;
+    }
   }
 }

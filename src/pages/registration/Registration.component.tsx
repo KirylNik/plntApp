@@ -1,13 +1,13 @@
-import React, {FC, useState} from "react";
-import { PageInfo } from "../../components/PageInfo/PageInfo.components";
-import { Button } from "../../components/Button/Button.component";
+import React, {useState} from "react";
+import PageInfo from "../../components/PageInfo/PageInfo.components";
+import Button from "../../components/Button/Button.component";
 import style from './style.module.scss';
 import EmailInput from "../../components/EmailInput/EmailInput.component";
 import {TPageComponent} from "../../types/app.types";
 
 const Registration: TPageComponent = () => {
     const [isEmailValid, setIsEmailValid] = useState(false);
-    debugger
+
     return (
         <div className={style.registration}>
             <PageInfo

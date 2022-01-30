@@ -61,45 +61,49 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .registration__messageBlock {
-    margin-bottom: 18px;
-  }
+  .registration {
+    &__messageBlock {
+      margin-bottom: 18px;
+    }
 
-  .registration__emailForm {
-    margin: 18px 0 12px;
-  }
+    &__emailForm {
+      margin: 18px 0 12px;
+    }
 
-  .registration__illustr {
-    margin-bottom: 14px;
+    &__illustr {
+      margin-bottom: 14px;
+    }
   }
 }
 
 @media screen and (max-width: 479px) {
-  .registration__info {
-    width: auto;
-  }
+  .registration {
+    &__info {
+      width: auto;
+    }
 
-  .registration__button {
-    order: 1;
-  }
+    &__button {
+      order: 1;
+    }
 
-  .registration__messageBlock {
-    margin-bottom: 24px;
-    max-width: 340px;
-  }
+    &__messageBlock {
+      margin-bottom: 24px;
+      max-width: 340px;
+    }
 
-  .registration__createAccount {
-    order: 1;
-  }
+    &__createAccount {
+      order: 1;
+    }
 
-  .registration__illustr {
-    order: 0;
-    max-height: 185px;
-    margin: 30px 0;
-  }
+    &__illustr {
+      order: 0;
+      max-height: 185px;
+      margin: 30px 0;
+    }
 
-  .registration__emailForm {
-    order: 2;
-    margin: 15px 0 26px;
+    &__emailForm {
+      order: 2;
+      margin: 15px 0 26px;
+    }
   }
 }

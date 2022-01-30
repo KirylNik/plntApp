@@ -8,7 +8,7 @@ type TTrivialButtonProps = {
     className?: string
 }
 
-export const Button: FC<PropsWithChildren<TTrivialButtonProps>> = ({
+const Button: FC<PropsWithChildren<TTrivialButtonProps>> = ({
     onClick,
     disabled = false,
     className,
@@ -23,3 +23,5 @@ export const Button: FC<PropsWithChildren<TTrivialButtonProps>> = ({
         {children}
     </button>
 );
+
+export default Button;

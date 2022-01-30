@@ -1,11 +1,11 @@
-import React, { FC } from "react";
-import { PageInfo } from "../../components/PageInfo/PageInfo.components";
-import { Button } from "../../components/Button/Button.component";
+import React from "react";
+import PageInfo from "../../components/PageInfo/PageInfo.components";
+import Button from "../../components/Button/Button.component";
 import style from './style.module.scss';
 import {TPageComponent} from "../../types/app.types";
 import {PAGES} from "../../enums/pages.enum";
 
-export const Recognize: TPageComponent = ({goToPage}) => {
+const Recognize: TPageComponent = ({ goToPage }) => {
     return (
         <div className={style.recognize}>
             <PageInfo
@@ -23,3 +23,5 @@ export const Recognize: TPageComponent = ({goToPage}) => {
         </div>
     )
 }
+
+export default Recognize;

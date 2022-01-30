@@ -8,7 +8,7 @@ type TMainLayoutProps = {
     className?: string
 }
 
-export const PageInfo: FC<TMainLayoutProps> = ({ title, subTitle, className }) => {
+const PageInfo: FC<TMainLayoutProps> = ({ title, subTitle, className }) => {
     return (
         <div className={cn(style.pageInfo, className)}>
             <h1>{title}</h1>
@@ -16,3 +16,5 @@ export const PageInfo: FC<TMainLayoutProps> = ({ title, subTitle, className }) =
         </div>
     )
 }
+
+export default PageInfo;
