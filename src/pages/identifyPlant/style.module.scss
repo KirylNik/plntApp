@@ -41,34 +41,34 @@
   .identifyPlant {
     width: 816px;
     margin: 0 auto;
-  }
 
-  .identifyPlant:before {
-    background-position: bottom;
-  }
+    &:before {
+      background-position: bottom;
+    }
 
-  .identifyPlant__button {
-    width: 255px;
+    &__button {
+      width: 255px;
+    }
   }
 }
 
 @media screen and (max-width: 479px) {
   .identifyPlant {
     width: auto;
-  }
 
-  .identifyPlant__button {
-    order: 1;
-  }
+    &:before {
+      content: none;
+    }
 
-  .identifyPlant__illustr {
-    background: no-repeat center url("../../assets/svg/IdentifyPlantIllustrMob.svg");
-    background-size: contain;
-    max-height: 367px;
-    order: 0;
-  }
+    &__button {
+      order: 1;
+    }
 
-  .identifyPlant:before {
-    content: none;
+    &__illustr {
+      background: no-repeat center url("../../assets/svg/IdentifyPlantIllustrMob.svg");
+      background-size: contain;
+      max-height: 367px;
+      order: 0;
+    }
   }
 }

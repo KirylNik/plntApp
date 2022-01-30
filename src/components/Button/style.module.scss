@@ -7,17 +7,18 @@
     color: var(--appTextLight);
     cursor: pointer;
     padding: 16px 24px;
-    background: var(--appBasicPrimary);
+    background-color: var(--appBasicPrimary);
     border-radius: 16px;
     width: 288px;
     height: 48px;
+    transition: background-color .2s ease-in-out;
 
     &:hover {
-        background: var(--appBasicGreenHover);
+        background-color: var(--appBasicGreenHover);
     }
 
     &:active {
-        background: var(--appBasicGreenPress);
+        background-color: var(--appBasicGreenPress);
     }
 
     &:disabled {

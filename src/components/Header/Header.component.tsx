@@ -5,9 +5,9 @@ import style from './style.module.scss';
 function Header() {
     return (
             <header>
-                <div className={style.appTitle}>
+                <div className={style.title}>
                     <Logo />
-                    <span className={style.appTitle_bold}>PLNT:</span>
+                    <span className={style.title_bold}>PLNT:</span>
                     <span>Plant & Tree Idenifier</span>
                 </div>
             </header>

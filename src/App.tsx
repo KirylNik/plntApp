@@ -1,9 +1,8 @@
 import React, {FC, useState} from 'react';
 import { CSSTransition } from 'react-transition-group';
-import './color.config.scss';
-import './fonts.config.scss';
+import './styles/global.module.scss';
 import style from './app.module.scss';
-import { IdentifyPlant } from "./pages/identifyPlant/IdentifyPlant.component";
+import IdentifyPlant from "./pages/identifyPlant/IdentifyPlant.component";
 import Header from "./components/Header/Header.component";
 import Footer from "./components/Footer/Footer.component";
 import {Recognize} from "./pages/recognize/Recognize.component";
@@ -27,21 +26,21 @@ const PAGES_MAPP: Record<PAGES, TPageComponent> = {
 
 const App: FC = () => {
     const [currentPage, setCurrentPage] = useState(PAGES.IDENTIFY_PLANT);
-    const pages = Object.keys(PAGES_MAPP);
+    const pages = Object.keys(PAGES_MAPP) as PAGES[];
 
     return (
-      <div className={style.appContainer}>
+      <>
         <Header />
         <main>
             {
                 pages.map((page) => {
-                    const Component = PAGES_MAPP[page as PAGES];
+                    const Component = PAGES_MAPP[page];
 
                     return (
                         <CSSTransition
                             key={page}
                             in={currentPage === page}
-                            timeout={1000}
+                            timeout={500}
                             mountOnEnter
                             unmountOnExit
                             classNames={{
@@ -61,7 +60,7 @@ const App: FC = () => {
             }
         </main>
         <Footer />
-      </div>
+      </>
     );
 }
 

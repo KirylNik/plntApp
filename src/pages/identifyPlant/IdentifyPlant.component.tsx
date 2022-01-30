@@ -5,7 +5,7 @@ import style from './style.module.scss';
 import {TPageComponent} from "../../types/app.types";
 import {PAGES} from "../../enums/pages.enum";
 
-export const IdentifyPlant: TPageComponent = ({goToPage}) => {
+const IdentifyPlant: TPageComponent = ({goToPage}) => {
     return (
         <div className={style.identifyPlant}>
             <PageInfo
@@ -23,3 +23,5 @@ export const IdentifyPlant: TPageComponent = ({goToPage}) => {
         </div>
     )
 }
+
+export default IdentifyPlant;
